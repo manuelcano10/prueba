@@ -1,21 +1,19 @@
 class Persona:
+    #constructor de la clase
+    #atributos
+    name = []
+    lastname = []
 
-    #Constructor de la clase
-    #Atributos
-    nombre = []
-    apellido = []
+    #metodos
+    def addPerson(self, name, lastname):
+        self.name.append(name)
+        self.lastname.append(lastname)
+    
+    def showPeople(self):
+        for i in range(0,len(self.name)):
+            print("name:" + str(self.name[i]) + " lastname: " + str(self.lastname[i]))
 
-    #Metodos
-    def addPerson(self,nombre,apellido):
-        self.nombre.append(nombre)
-        self.apellido.append(apellido)
-
-    def showPerson(self):
-        for i in range(0,len(self.nombre)):
-            print("nombre" + str(self.nombre[i] + "apellido" + str(self.apellido[i]))
-
-Persona = Persona()
-Persona.addPerson("Juan","Cano")
-Persona.addPerson("Jorge","Lopez")
-Persona.showPerson()
-
+persona = Persona()
+persona.addPerson("juan","zabala")
+persona.addPerson("Jorge", "Lopez")
+persona.showPeople()
