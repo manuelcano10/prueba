@@ -1,0 +1,17 @@
+{% extends "layout.html"%}
+{% block content %}
+    <h1>Task</h1>
+    <div class="container">
+    <form action="/addtask" method="POST">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Task Name</label>
+        <input type="text" class="form-control" name="taskName" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Task Date</label>
+        <input type="text" class="form-control" name="taskDate" id="exampleInputPassword1">
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+{% endblock %}

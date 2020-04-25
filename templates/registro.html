@@ -1,27 +1,4 @@
 {% extends "layout.html"%}
 {% block content %}
     <h1>Registro</h1>
-    <form action="action_page.php">
-        <div class="container">
-          <h1 style="color: red;">Registrarse</h1>
-          <p>Por favor llena este formulario para crear una cuenta.</p>
-          <hr>
-      
-          <label for="email"><b>Correo</b></label>
-          <input type="text"  name="email" required>
-      
-          <label for="psw"><b>Contraseña</b></label>
-          <input type="password"  name="psw" required>
-      
-          <label for="psw-repeat"><b>Repetir Contraseña</b></label>
-          <input type="password"  name="psw-repeat" required>
-          <hr>
-    
-          <button type="submit" class="registerbtn">Registrar</button>
-        </div>
-      
-        <div class="container signin">
-          <p>Ya tienes una cuenta? <a href="/login">Iniciar Sesión</a>.</p>
-        </div>
-      </form>
 {% endblock %}
